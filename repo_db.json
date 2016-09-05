@@ -1,0 +1,147 @@
+{
+    "cgp13": {
+        "short_desc": "Cartesian Grid Partitioning.",
+        "long_desc": "A C++ library for cartesian grid partitioning, with a matlab interface.",
+        "authors": ["Bjoern Andres", "Thorben Kroeger"]
+    },
+    "vecvec": {
+        "short_desc": "A serializable replacement for std::vector&lt;std::vector&lt;T&gt;&gt;.",
+        "long_desc": "This is a dependency for <a href=\"http://hci-repo.iwr.uni-heidelberg.de/research_code/CGP\">CGP</a>. Use case: loading a fixed inverse relabeling (one to many and many to many relation) of millions of objects from disk.",
+        "authors": ["Thorben Kroeger"]
+    },
+    "visualizatino": {
+        "short_desc": "2D and 3D visualisation of neurological datasets.",
+        "long_desc": "2D and 3D visualisation of neurological datasets.",
+        "authors": ["Thorben Kroeger", "Niko Krasowski"]
+    },
+    "chatty": {
+        "short_desc": "A logger for both C++ and Python.",
+        "long_desc": "This is a dependency for <a href=\"http://hci-repo.iwr.uni-heidelberg.de/research_code/CGP\">CGP</a>.",
+        "authors": ["Thorben Kroeger"]
+    },
+    "statistics-cgp": {
+        "short_desc": "Statistics for <a href=\"http://hci-repo.iwr.uni-heidelberg.de/research_code/CGP\">CGP</a>.",
+        "long_desc": "Evaluate average sizes of 1-sets, 2-sets, 3-sets as well as compression of topological grid blocks using the <a href=\"http://hci-repo.iwr.uni-heidelberg.de/research_code/CGP\">CGP</a> library. This library depends on <a href=\"http://hci-repo.iwr.uni-heidelberg.de/research_code/CGP\">CGP</a>.",
+        "authors": ["Thorben Kroeger"]
+    },
+    "ccc3d": {
+        "short_desc": "A multicut solver based on <a href=\"http://hci-repo.iwr.uni-heidelberg.de/research_code/CGP\">CGP</a>.",
+        "long_desc": "This library depends on <a href=\"http://hci-repo.iwr.uni-heidelberg.de/research_code/CGP\">CGP</a>.",
+        "authors": ["Thorben Kroeger", "Niko Krasowski"]
+    },
+    "CGP": {
+        "short_desc": "Cartesian grid partitioning.",
+        "long_desc": "This library depends on <a href=\"http://hci-repo.iwr.uni-heidelberg.de/research_code/vecvec\">vecvec</a> and <a href=\"http://hci-repo.iwr.uni-heidelberg.de/research_code/chatty\">chatty</a>.",
+        "authors": ["Thorben Kroeger", "Niko Krasowski"]
+    },
+    "libsvm_om": {
+        "short_desc": "Octave/Matlab interface for libsvm.",
+        "long_desc": "This tool provides a simple interface to LIBSVM, a library for support vector machines (<a href=\"http://www.csie.ntu.edu.tw/~cjlin/libsvm\">http://www.csie.ntu.edu.tw/~cjlin/libsvm</a>).",
+        "authors": ["Jun-Cheng Chen"],
+        "ext_link": "https://www.csie.ntu.edu.tw/~cjlin/libsvm/"
+    },
+    "cogstate": {
+        "short_desc": "Multitask learning using regularized multiple kernel learning.",
+        "long_desc": "Code from the paper <em>Multitask Learning Using Regularized Multiple Kernel Learning</em>.",
+        "authors": ["Melih Kandemir"],
+        "refs" : ["http://link.springer.com/chapter/10.1007%2F978-3-642-24958-7_58"]
+    },
+    "dpct": {
+        "short_desc": "Dynamic programming cell tracking.",
+        "long_desc": "This is a stand-alone tool for running tracking of divisible objects using a modified successive shortest paths solver.",
+        "authors": ["Carsten Haubold"],
+        "refs" : ["https://hci.iwr.uni-heidelberg.de/node/6077"],
+        "ext_link": "https://github.com/chaubold/dpct"
+    },
+    "eventdetector": {
+        "short_desc": "Cell event detection.",
+        "long_desc": "Code from the paper <em>Cell event detection in phase-contrast microscopy sequences from few annotations</em>.",
+        "authors": ["Melih Kandemir"],
+        "refs" : ["http://link.springer.com/chapter/10.1007%2F978-3-319-24574-4_38#p"]
+    },
+    "nnet_core": {
+        "short_desc": "Basic utilities for the implementation of neural networks in Python.",
+        "long_desc": "Basic utilities for the implementation of neural networks in Python.",
+        "authors": ["Gregor Urban"]
+    },
+    "conservation_tracking_pipeline": {
+        "short_desc": "C++ Pipeline to run Conservation Tracking.",
+        "long_desc": "This pipeline runs the conservation tracking algorithm given a sequence of tiff images and pre-trained Random Forest classifiers. The classifiers can be extracted from previously trained ilastik projects for pixel classification and tracking, but every step will be rerun in the C++ pipeline (allows for batch-segmenting and tracking).",
+        "authors": ["Philipp Hanslovsky", "Carsten Haubold", "Martin Schiegg", "David Stoeckel"],
+        "refs" : ["http://www.cv-foundation.org/openaccess/content_iccv_2013/html/Schiegg_Conservation_Tracking_2013_ICCV_paper.html"],
+        "ext_link": "http://hci-repo.iwr.uni-heidelberg.de/research_code/conservation_tracking_pipeline"
+    },
+    "fastfilters": {
+        "short_desc": "Fast gaussian and derivative convolutional filters.",
+        "long_desc": "Optimised for AVX.",
+        "authors": ["Sven Peter"],
+        "ext_link": "https://github.com/svenpeter42/fastfilters"
+    },
+    "histopath": {
+        "short_desc": "Histopathology cancer diagnosis by cell graphs.",
+        "long_desc": "Code from the paper <em>Empowering Multiple Instance Histopathology Cancer Diagnosis by Cell Graphs</em>.",
+        "authors": ["Melih Kandemir"],
+        "refs": ["http://link.springer.com/chapter/10.1007%2F978-3-319-10470-6_29"]
+    },
+    "hytra": {
+        "short_desc": "Tracking Toolbox of the IAL Lab @ uni-heidelberg.de.",
+        "long_desc": "Tracking Toolbox of the IAL Lab @ uni-heidelberg.de.",
+        "authors": ["Carsten Haubold", "Steffen Wolf", "Letitia Parcalabescu", "Bernhard Kausler", "Martin Schiegg"],
+        "ext_link": "https://github.com/chaubold/hytra"
+    },
+    "imgret": {
+        "short_desc": "Utilities for Gaussian processes for ML.",
+        "long_desc": "Utilities for Gaussian processes for ML.",
+        "authors": ["Melih Kandemir"]
+    },
+    "miGraphPy": {
+        "short_desc": "A Python implementation of the multiple instance learning (MIL) method miGraph.",
+        "long_desc": "A Python implementation of the multiple instance learning (MIL) method miGraph.",
+        "authors": ["Manuel Tuschen"],
+        "refs": ["http://doi.acm.org/10.1145/1553374.1553534"],
+        "ext_link": "https://github.com/manuSrep/miGraphPy"
+    },
+    "mil_methods": {
+        "short_desc": "A collection of implementations of methods for multiple instance learning.",
+        "long_desc": "A collection of implementations of methods for multiple instance learning.",
+        "authors": ["Melih Kandemir"]
+    },
+    "multiHypothesesTracking": {
+        "short_desc": "Tool for tracking of divisible objects.",
+        "long_desc": "This is a standalone tool for running tracking of divisible objects, with competing detection hypotheses in each frame. When specifying a ground truth labeling for a dataset, the weights can be learned using structured learning (by OpenGM's implementation of SBMRM). The tracking problem is then solved as ILP by Gurobi or CPLEX, depending on how this tool was compiled.",
+        "authors": ["Carsten Haubold"],
+        "ext_link": "https://github.com/chaubold/multiHypothesesTracking"
+    },
+    "multitaskmkl": {
+        "short_desc": "Multitask learning using regularized multiple kernel learning.",
+        "long_desc": "Code from the paper <em>Multitask learning using regularized multiple kernel learning</em>.",
+        "authors": ["Melih Kandemir"],
+        "refs": ["http://link.springer.com/chapter/10.1007%2F978-3-642-24958-7_58"]
+    },
+    "nifty": {
+        "short_desc": "A library for Multicuts and general image and graph segmentation.",
+        "long_desc": "A nifty library for Multicuts and general image and graph segmentation.",
+        "authors": ["Thorsten Beier"],
+        "refs": ["http://ipa.iwr.uni-heidelberg.de/ipabib/Papers/kappes-emmcvpr2011.pdf","http://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Beier_Fusion_Moves_for_2015_CVPR_paper.pdf"],
+        "ext_link": "https://github.com/DerThorsten/nifty"
+    },
+    "retinopathy": {
+        "short_desc": "Detection of retinopathy of prematurity using multiple instance learning.",
+        "long_desc": "Code from the paper <em>Detection of retinopathy of prematurity using multiple instance learning</em>.",
+        "authors": ["Melih Kandemir"],
+        "refs": ["http://ieeexplore.ieee.org/xpl/login.jsp?tp=&arnumber=7275949&url=http%3A%2F%2Fieeexplore.ieee.org%2Fxpls%2Fabs_all.jsp%3Farnumber%3D7275949"]
+    },
+    "sstd_python": {
+        "short_desc": "Python / cython implementation of sparse space-time deconvolution for Calcium image analysis.",
+        "long_desc": "Code from the paper <em>Sparse space-time deconvolution for Calcium image analysis</em>.",
+        "authors": ["Sven Peter"],
+        "refs": ["https://papers.nips.cc/paper/5342-sparse-space-time-deconvolution-for-calcium-image-analysis.pdf"],
+        "ext_link": "https://github.com/svenpeter42/sstd_python"
+    },
+    "struct-svm": {
+        "short_desc": "Structured SVM playground.",
+        "long_desc": "This is a python playground using dlib, gurobipy and opengm to explore structured svms and their solvers.",
+        "authors": ["Carsten Haubold"],
+        "ext_link": "https://bitbucket.org/chaubold/struct-svm"
+    }
+}
