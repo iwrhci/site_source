@@ -15,14 +15,18 @@
         <div class="panel-heading">
             <h2>List of repositories</h2>
             <p>
-                Here follows the list of research software projects hosted on the <a href="http://hci-repo.iwr.uni-heidelberg.de">GitLab instance of the HCI</a>.
-                In order to access the homepages of the individual projects, you will need to provide your HCI LDAP authentication. All projects are collectively
-                grouped under the GitLab <a href="http://hci-repo.iwr.uni-heidelberg.de/groups/research_code">research_code</a> group.
+                Here follows a list of research software projects developed within the <a href="https://hci.iwr.uni-heidelberg.de/">Heidelberg Collaboratory for Image Processing (HCI)</a>.
             </p>
             <p>
                 Click on the <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span> icon for more information on the individual projects.
-                Project pages can be reached by clicking either on the project name or on the <span class="glyphicon glyphicon-link" aria-hidden="true"></span> icon.
-                The latest version of the code can always be downloaded directly by clicking on the <span class="glyphicon glyphicon-download" aria-hidden="true"></span> icon.
+                Some of these projects are hosted on the <a href="http://hci-repo.iwr.uni-heidelberg.de">GitLab instance of the HCI</a>: their home pages
+                can be reached by clicking either on the project name or on the <span class="glyphicon glyphicon-link" aria-hidden="true"></span> icon,
+                and the latest version of the code can always be downloaded directly by clicking on the <span class="glyphicon glyphicon-download" aria-hidden="true"></span> icon.
+                All projects are collectively
+                grouped under the GitLab <a href="http://hci-repo.iwr.uni-heidelberg.de/groups/research_code">research_code</a> group.
+                You will need an HCI LDAP account in order to access these projects, please contact <a href="https://www1.iwr.uni-heidelberg.de/iwr/public/people/de/3956">Dominic Spangenberger</a>.
+            </p>
+            <p>
                 External project pages (e.g., on GitHub or BitBucket) are reachable via the <span class="glyphicon glyphicon-new-window" aria-hidden="true"></span> icon.
                 Bibliographical references are listed when available.
             </p>
@@ -40,13 +44,21 @@
             <tbody>
                 {% for key, val in repo_db.items() %}
                 <tr>
-                    <td style="white-space: nowrap;"><a style="margin: 0px 10px 0px 0px" class="accordion-toggle" data-toggle="collapse" data-target="#{{ key }}"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true" style="cursor:pointer"></span></a><a href="http://hci-repo.iwr.uni-heidelberg.de/research_code/{{ key }}">{{ key }}</a></td>
+                    <td style="white-space: nowrap;"><a style="margin: 0px 10px 0px 0px" class="accordion-toggle" data-toggle="collapse" data-target="#{{ key }}"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true" style="cursor:pointer"></span></a>
+                        {% if not 'hci_hosted' in val or val['hci_hosted'] %}
+                            <a href="http://hci-repo.iwr.uni-heidelberg.de/research_code/{{ key }}">{{ key }}</a>
+                        {% else %}
+                            <a href="{{ val['ext_link'] }}">{{ key }}</a>
+                        {% endif %}
+                    </td>
                     <td>{{ val['short_desc'] }}</td>
                     <td>{{ ', '.join(val['authors'] | sort()) }}</td>
                     <td style="text-align:center">{{ ', '.join(val['refs']) }}</td>
                     <td style="white-space: nowrap;">
+                        {% if not 'hci_hosted' in val or val['hci_hosted'] %}
                         <a href="http://hci-repo.iwr.uni-heidelberg.de/research_code/{{ key }}"><span title="Project page" class="glyphicon glyphicon-link" aria-hidden="true"></span></a>
                         <a href="http://hci-repo.iwr.uni-heidelberg.de/research_code/{{ key }}/repository/archive.zip?ref=master"><span title="Download the latest version" class="glyphicon glyphicon-download" aria-hidden="true"></span></a>
+                        {% endif %}
                         {% if 'ext_link' in val %}
                         <a href="{{ val['ext_link'] }}" target="_blank"><span title="Link to external project page" class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a>
                         {% endif %}

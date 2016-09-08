@@ -143,5 +143,19 @@
         "long_desc": "This is a python playground using dlib, gurobipy and opengm to explore structured svms and their solvers.",
         "authors": ["Carsten Haubold"],
         "ext_link": "https://bitbucket.org/chaubold/struct-svm"
+    },
+    "vigra": {
+        "short_desc": "Generic programming for computer vision.",
+        "long_desc": "VIGRA stands for \"Vision with Generic Algorithms\". It's an image processing and analysis library that puts its main emphasis on customizable algorithms and data structures. VIGRA is especially strong for multi-dimensional images, because many algorithms (e.g. filters, feature computation, superpixels) are implemented for arbitrary high dimensions. By using template techniques similar to those in the C++ Standard Template Library, you can easily adapt any VIGRA component to the needs of your application, without thereby giving up execution speed. As of version 1.7.1, VIGRA also provides extensive Python bindings on the basis of the popular numpy framework.",
+        "authors": ["Ullrich Koethe"],
+        "ext_link": "https://ukoethe.github.io/vigra/",
+        "hci_hosted": false
+    },
+    "opengm": {
+        "short_desc": "OpenGM is a C++ template library for discrete factor graph models.",
+        "long_desc": "OpenGM includes state-of-the-art optimization and inference algorithms beyond message passing. OpenGM handles large models efficiently, since (i) functions that occur repeatedly need to be stored only once and (ii) when functions require different parametric or non-parametric encodings, multiple encodings can be used alongside each other, in the same model, using included and custom C++ code.",
+        "authors": ["Bjoern Andres", "Thorsten Beier", "Joerg H. Kappes"],
+        "ext_link": "https://github.com/opengm/opengm",
+        "hci_hosted": false
     }
 }
