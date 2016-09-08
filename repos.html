@@ -39,6 +39,7 @@
                     <th>Author(s)</th>
                     <th style="text-align:center">Bibrefs</th>
                     <th>Links</th>
+                    <th style="text-align:center">Status</th>
                 </tr>
             </thead>
             <tbody>
@@ -63,9 +64,20 @@
                         <a href="{{ val['ext_link'] }}" target="_blank"><span title="Link to external project page" class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a>
                         {% endif %}
                     </td>
+                    <td style="text-align:center">
+                        {% for s in val['status'] %}
+                            {% if s == "mature" %}
+                                <span class="label label-success" style="font-size: tiny;" data-toggle="tooltip" data-placement="right" title="Mature project">M</span>
+                            {% elif s == "devel" %}
+                                <span class="label label-info" style="font-size: tiny;" data-toggle="tooltip" data-placement="right" title="Active development">D</span>
+                            {% elif s == "research" %}
+                                <span class="label label-danger" style="font-size: tiny;" data-toggle="tooltip" data-placement="right" title="Research code">R</span>
+                            {% endif %}
+                        {% endfor %}
+                    </td>
                 </tr>
                 <tr>
-                    <td colspan="5" class="hiddenRow">
+                    <td colspan="6" class="hiddenRow">
                         <div class="accordion-body collapse" id="{{ key }}">{{ val['long_desc'] }}</div>
                     </td>
                 </tr>
@@ -76,4 +88,12 @@
 
 </div>
 
+{% endblock %}
+
+{% block extra_script %}
+<script>
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
 {% endblock %}

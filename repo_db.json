@@ -38,125 +38,145 @@
         "short_desc": "Octave/Matlab interface for libsvm.",
         "long_desc": "This tool provides a simple interface to LIBSVM, a library for support vector machines (<a href=\"http://www.csie.ntu.edu.tw/~cjlin/libsvm\">http://www.csie.ntu.edu.tw/~cjlin/libsvm</a>).",
         "authors": ["Jun-Cheng Chen"],
-        "ext_link": "https://www.csie.ntu.edu.tw/~cjlin/libsvm/"
+        "ext_link": "https://www.csie.ntu.edu.tw/~cjlin/libsvm/",
+        "status": ["research"]
     },
     "cogstate": {
         "short_desc": "Multitask learning using regularized multiple kernel learning.",
         "long_desc": "Code from the paper <em>Multitask Learning Using Regularized Multiple Kernel Learning</em>.",
         "authors": ["Melih Kandemir"],
-        "refs" : ["http://link.springer.com/chapter/10.1007%2F978-3-642-24958-7_58"]
+        "refs" : ["http://link.springer.com/chapter/10.1007%2F978-3-642-24958-7_58"],
+        "status": ["research"]
     },
     "dpct": {
         "short_desc": "Dynamic programming cell tracking.",
         "long_desc": "This is a stand-alone tool for running tracking of divisible objects using a modified successive shortest paths solver.",
         "authors": ["Carsten Haubold"],
         "refs" : ["https://hci.iwr.uni-heidelberg.de/node/6077"],
-        "ext_link": "https://github.com/chaubold/dpct"
+        "ext_link": "https://github.com/chaubold/dpct",
+        "status": ["mature", "devel"]
     },
     "eventdetector": {
         "short_desc": "Cell event detection.",
         "long_desc": "Code from the paper <em>Cell event detection in phase-contrast microscopy sequences from few annotations</em>.",
         "authors": ["Melih Kandemir"],
-        "refs" : ["http://link.springer.com/chapter/10.1007%2F978-3-319-24574-4_38#p"]
+        "refs" : ["http://link.springer.com/chapter/10.1007%2F978-3-319-24574-4_38#p"],
+        "status": ["research"]
     },
     "nnet_core": {
         "short_desc": "Basic utilities for the implementation of neural networks in Python.",
         "long_desc": "Basic utilities for the implementation of neural networks in Python.",
-        "authors": ["Gregor Urban"]
+        "authors": ["Gregor Urban"],
+        "status": ["research"]
     },
     "conservation_tracking_pipeline": {
         "short_desc": "C++ Pipeline to run Conservation Tracking.",
         "long_desc": "This pipeline runs the conservation tracking algorithm given a sequence of tiff images and pre-trained Random Forest classifiers. The classifiers can be extracted from previously trained ilastik projects for pixel classification and tracking, but every step will be rerun in the C++ pipeline (allows for batch-segmenting and tracking).",
         "authors": ["Philipp Hanslovsky", "Carsten Haubold", "Martin Schiegg", "David Stoeckel"],
         "refs" : ["http://www.cv-foundation.org/openaccess/content_iccv_2013/html/Schiegg_Conservation_Tracking_2013_ICCV_paper.html"],
-        "ext_link": "http://hci-repo.iwr.uni-heidelberg.de/research_code/conservation_tracking_pipeline"
+        "ext_link": "https://github.com/chaubold/conservation_tracking_pipeline",
+        "status": ["devel"]
     },
     "fastfilters": {
         "short_desc": "Fast gaussian and derivative convolutional filters.",
         "long_desc": "Optimised for AVX.",
         "authors": ["Sven Peter"],
-        "ext_link": "https://github.com/svenpeter42/fastfilters"
+        "ext_link": "https://github.com/svenpeter42/fastfilters",
+        "status": ["devel"]
     },
     "histopath": {
         "short_desc": "Histopathology cancer diagnosis by cell graphs.",
         "long_desc": "Code from the paper <em>Empowering Multiple Instance Histopathology Cancer Diagnosis by Cell Graphs</em>.",
         "authors": ["Melih Kandemir"],
-        "refs": ["http://link.springer.com/chapter/10.1007%2F978-3-319-10470-6_29"]
+        "refs": ["http://link.springer.com/chapter/10.1007%2F978-3-319-10470-6_29"],
+        "status": ["research"]
     },
     "hytra": {
         "short_desc": "Tracking Toolbox of the IAL Lab @ uni-heidelberg.de.",
         "long_desc": "Tracking Toolbox of the IAL Lab @ uni-heidelberg.de.",
         "authors": ["Carsten Haubold", "Steffen Wolf", "Letitia Parcalabescu", "Bernhard Kausler", "Martin Schiegg"],
-        "ext_link": "https://github.com/chaubold/hytra"
+        "ext_link": "https://github.com/chaubold/hytra",
+        "status": ["mature", "devel"]
     },
     "imgret": {
         "short_desc": "Utilities for Gaussian processes for ML.",
         "long_desc": "Utilities for Gaussian processes for ML.",
-        "authors": ["Melih Kandemir"]
+        "authors": ["Melih Kandemir"],
+        "status": ["research"]
     },
     "miGraphPy": {
         "short_desc": "A Python implementation of the multiple instance learning (MIL) method miGraph.",
         "long_desc": "A Python implementation of the multiple instance learning (MIL) method miGraph.",
         "authors": ["Manuel Tuschen"],
         "refs": ["http://doi.acm.org/10.1145/1553374.1553534"],
-        "ext_link": "https://github.com/manuSrep/miGraphPy"
+        "ext_link": "https://github.com/manuSrep/miGraphPy",
+        "status": ["mature"]
     },
     "mil_methods": {
         "short_desc": "A collection of implementations of methods for multiple instance learning.",
         "long_desc": "A collection of implementations of methods for multiple instance learning.",
-        "authors": ["Melih Kandemir"]
+        "authors": ["Melih Kandemir"],
+        "status": ["research"]
     },
     "multiHypothesesTracking": {
         "short_desc": "Tool for tracking of divisible objects.",
         "long_desc": "This is a standalone tool for running tracking of divisible objects, with competing detection hypotheses in each frame. When specifying a ground truth labeling for a dataset, the weights can be learned using structured learning (by OpenGM's implementation of SBMRM). The tracking problem is then solved as ILP by Gurobi or CPLEX, depending on how this tool was compiled.",
         "authors": ["Carsten Haubold"],
-        "ext_link": "https://github.com/chaubold/multiHypothesesTracking"
+        "ext_link": "https://github.com/chaubold/multiHypothesesTracking",
+        "status": ["mature", "devel"]
     },
     "multitaskmkl": {
         "short_desc": "Multitask learning using regularized multiple kernel learning.",
         "long_desc": "Code from the paper <em>Multitask learning using regularized multiple kernel learning</em>.",
         "authors": ["Melih Kandemir"],
-        "refs": ["http://link.springer.com/chapter/10.1007%2F978-3-642-24958-7_58"]
+        "refs": ["http://link.springer.com/chapter/10.1007%2F978-3-642-24958-7_58"],
+        "status": ["research"]
     },
     "nifty": {
         "short_desc": "A library for Multicuts and general image and graph segmentation.",
         "long_desc": "A nifty library for Multicuts and general image and graph segmentation.",
         "authors": ["Thorsten Beier"],
         "refs": ["http://ipa.iwr.uni-heidelberg.de/ipabib/Papers/kappes-emmcvpr2011.pdf","http://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Beier_Fusion_Moves_for_2015_CVPR_paper.pdf"],
-        "ext_link": "https://github.com/DerThorsten/nifty"
+        "ext_link": "https://github.com/DerThorsten/nifty",
+        "status": ["devel"]
     },
     "retinopathy": {
         "short_desc": "Detection of retinopathy of prematurity using multiple instance learning.",
         "long_desc": "Code from the paper <em>Detection of retinopathy of prematurity using multiple instance learning</em>.",
         "authors": ["Melih Kandemir"],
-        "refs": ["http://ieeexplore.ieee.org/xpl/login.jsp?tp=&arnumber=7275949&url=http%3A%2F%2Fieeexplore.ieee.org%2Fxpls%2Fabs_all.jsp%3Farnumber%3D7275949"]
+        "refs": ["http://ieeexplore.ieee.org/xpl/login.jsp?tp=&arnumber=7275949&url=http%3A%2F%2Fieeexplore.ieee.org%2Fxpls%2Fabs_all.jsp%3Farnumber%3D7275949"],
+        "status": ["research"]
     },
     "sstd_python": {
         "short_desc": "Python / cython implementation of sparse space-time deconvolution for Calcium image analysis.",
         "long_desc": "Code from the paper <em>Sparse space-time deconvolution for Calcium image analysis</em>.",
         "authors": ["Sven Peter"],
         "refs": ["https://papers.nips.cc/paper/5342-sparse-space-time-deconvolution-for-calcium-image-analysis.pdf"],
-        "ext_link": "https://github.com/svenpeter42/sstd_python"
+        "ext_link": "https://github.com/svenpeter42/sstd_python",
+        "status": ["research"]
     },
     "struct-svm": {
         "short_desc": "Structured SVM playground.",
         "long_desc": "This is a python playground using dlib, gurobipy and opengm to explore structured svms and their solvers.",
         "authors": ["Carsten Haubold"],
-        "ext_link": "https://bitbucket.org/chaubold/struct-svm"
+        "ext_link": "https://bitbucket.org/chaubold/struct-svm",
+        "status": ["mature"]
     },
     "vigra": {
         "short_desc": "Generic programming for computer vision.",
         "long_desc": "VIGRA stands for \"Vision with Generic Algorithms\". It's an image processing and analysis library that puts its main emphasis on customizable algorithms and data structures. VIGRA is especially strong for multi-dimensional images, because many algorithms (e.g. filters, feature computation, superpixels) are implemented for arbitrary high dimensions. By using template techniques similar to those in the C++ Standard Template Library, you can easily adapt any VIGRA component to the needs of your application, without thereby giving up execution speed. As of version 1.7.1, VIGRA also provides extensive Python bindings on the basis of the popular numpy framework.",
         "authors": ["Ullrich Koethe", "others"],
         "ext_link": "https://ukoethe.github.io/vigra/",
-        "hci_hosted": false
+        "hci_hosted": false,
+        "status": ["mature", "devel"]
     },
     "opengm": {
         "short_desc": "OpenGM is a C++ template library for discrete factor graph models.",
         "long_desc": "OpenGM includes state-of-the-art optimization and inference algorithms beyond message passing. OpenGM handles large models efficiently, since (i) functions that occur repeatedly need to be stored only once and (ii) when functions require different parametric or non-parametric encodings, multiple encodings can be used alongside each other, in the same model, using included and custom C++ code.",
         "authors": ["Bjoern Andres", "Thorsten Beier", "Joerg H. Kappes"],
         "ext_link": "https://github.com/opengm/opengm",
-        "hci_hosted": false
+        "hci_hosted": false,
+        "status": ["mature", "devel"]
     },
     "ilastik": {
         "short_desc": "Interactive image classification, segmentation and analysis.",
@@ -164,6 +184,7 @@
         "authors": ["Christoph Sommer", "Christoph Straehle", "Ullrich Koethe", "Fred A. Hamprecht", "others"],
         "ext_link": "http://ilastik.org/",
         "refs": ["http://ieeexplore.ieee.org/document/5872394/?arnumber=5872394"],
-        "hci_hosted": false
+        "hci_hosted": false,
+        "status": ["mature", "devel"]
     }
 }
