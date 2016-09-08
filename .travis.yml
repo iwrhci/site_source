@@ -8,6 +8,7 @@ env:
 
 script:
 - pip install jinja2
+- python render.py
 
 notifications:
   email: false
