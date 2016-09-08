@@ -163,6 +163,7 @@
         "long_desc": "ilastik is built as a modular software framework, which currently has workflows for automated (supervised) pixel- and object-level classification, automated and semi-automated object tracking, semi-automated segmentation and object counting without detection.",
         "authors": ["Christoph Sommer", "Christoph Straehle", "Ullrich Koethe", "Fred A. Hamprecht", "others"],
         "ext_link": "http://ilastik.org/",
+        "refs": ["http://ieeexplore.ieee.org/document/5872394/?arnumber=5872394"],
         "hci_hosted": false
     }
 }
