@@ -7,6 +7,9 @@ set -x
 
 pip install jinja2
 python render.py
+git config --global push.default simple
+git config --global user.name "Travis CI"
+git config --global user.email "bluescarni@gmail.com"
 cd ..
 set +x
 git clone "https://${GH_TOKEN}@github.com/iwrhci/iwrhci.github.io.git" iwrhci.github.io -q
