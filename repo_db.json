@@ -147,7 +147,7 @@
     "vigra": {
         "short_desc": "Generic programming for computer vision.",
         "long_desc": "VIGRA stands for \"Vision with Generic Algorithms\". It's an image processing and analysis library that puts its main emphasis on customizable algorithms and data structures. VIGRA is especially strong for multi-dimensional images, because many algorithms (e.g. filters, feature computation, superpixels) are implemented for arbitrary high dimensions. By using template techniques similar to those in the C++ Standard Template Library, you can easily adapt any VIGRA component to the needs of your application, without thereby giving up execution speed. As of version 1.7.1, VIGRA also provides extensive Python bindings on the basis of the popular numpy framework.",
-        "authors": ["Ullrich Koethe"],
+        "authors": ["Ullrich Koethe", "others"],
         "ext_link": "https://ukoethe.github.io/vigra/",
         "hci_hosted": false
     },
@@ -156,6 +156,13 @@
         "long_desc": "OpenGM includes state-of-the-art optimization and inference algorithms beyond message passing. OpenGM handles large models efficiently, since (i) functions that occur repeatedly need to be stored only once and (ii) when functions require different parametric or non-parametric encodings, multiple encodings can be used alongside each other, in the same model, using included and custom C++ code.",
         "authors": ["Bjoern Andres", "Thorsten Beier", "Joerg H. Kappes"],
         "ext_link": "https://github.com/opengm/opengm",
+        "hci_hosted": false
+    },
+    "ilastik": {
+        "short_desc": "Interactive image classification, segmentation and analysis.",
+        "long_desc": "ilastik is built as a modular software framework, which currently has workflows for automated (supervised) pixel- and object-level classification, automated and semi-automated object tracking, semi-automated segmentation and object counting without detection.",
+        "authors": ["Christoph Sommer", "Christoph Straehle", "Ullrich Koethe", "Fred A. Hamprecht", "others"],
+        "ext_link": "http://ilastik.org/",
         "hci_hosted": false
     }
 }

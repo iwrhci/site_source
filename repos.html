@@ -46,13 +46,13 @@
                 <tr>
                     <td style="white-space: nowrap;"><a style="margin: 0px 10px 0px 0px" class="accordion-toggle" data-toggle="collapse" data-target="#{{ key }}"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true" style="cursor:pointer"></span></a>
                         {% if not 'hci_hosted' in val or val['hci_hosted'] %}
-                            <a href="http://hci-repo.iwr.uni-heidelberg.de/research_code/{{ key }}">{{ key }}</a>
+                            <a href="http://hci-repo.iwr.uni-heidelberg.de/research_code/{{ key }}" target="_blank">{{ key }}</a>
                         {% else %}
-                            <a href="{{ val['ext_link'] }}">{{ key }}</a>
+                            <a href="{{ val['ext_link'] }}" target="_blank">{{ key }}</a>
                         {% endif %}
                     </td>
                     <td>{{ val['short_desc'] }}</td>
-                    <td>{{ ', '.join(val['authors'] | sort()) }}</td>
+                    <td>{{ ', '.join(val['authors'][:-1]) + ' and others' if 'others' in val['authors'] else ', '.join(val['authors']) }}</td>
                     <td style="text-align:center">{{ ', '.join(val['refs']) }}</td>
                     <td style="white-space: nowrap;">
                         {% if not 'hci_hosted' in val or val['hci_hosted'] %}

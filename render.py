@@ -29,7 +29,10 @@ for _ in repo_db:
 
 # Render authors.
 for _ in repo_db:
-    repo_db[_]['authors'] = [a if not a in auth_db else r'<a href="' + auth_db[a] + r'">' + a + r'</a>' for a in repo_db[_]['authors']]
+    repo_db[_]['authors'] = [a if (not a in auth_db or a == 'others') else r'<a href="' + auth_db[a] + r'">' + a + r'</a>' for a in repo_db[_]['authors']]
+    if 'others' in repo_db[_]['authors']:
+        repo_db[_]['authors'].remove('others')
+        repo_db[_]['authors'].append('others')
 
 env = Environment()
 env.loader = FileSystemLoader('.')
