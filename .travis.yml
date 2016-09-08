@@ -1,0 +1,13 @@
+language: python
+
+sudo: false
+
+env:
+  global:
+    - secure: "cfjNtQBqroyPevVfD83+3Yd6RvrCcWUX1mBXL1eTM8A6POJHpqS7YD/r+jExtbDplk/fSyxxvVFueXAuVlEQ5zwNYZ40g2Fj4BHYkB05gAjF6onCEDMH/IKnjmS2Nn+/Pfm42EwCo4Aqqw+12curQgU9TIRdubGTiO9+pIK3y8t+rlvMUstr/CZ7dgVMon7sIdi9Mwy2joqMCjI1xtyWDFSgH97VLh6xXE04oTNoRtlcvNEbg4iaYSIoScRqcTmJ7O43Tpv7KpMjHzTbKaGTyQ/JhTHT2NJA3CxeHE6D6MWvpmeWoSd86PaJSLWLOkOZTsgAIJjUX9kdc5bJxMBc9SF0PQMeJua0Ssc1lJGbh9TvGsoBH2/WnudHRZHP36e5ODxvGsE3ZmiW7y/mxLpnL/LxENUhiGvDTWNBT5RiKVSb9R/S8vrLRRK7f9lqjq8xRsFMY2HktfNAjCEipaEY8lXANQuCxFQwoWIH7vIyeMv3ceG2/GNqu4WKZ+p1En5M1QFQvQtXlzoEJ2buKQ5QFPsi8d8b0ij10la/3E91IjPX9gGuNzJ9KlN7/ymkx8JhwzSZLQ9CWZzlizd5QCg+o46iKa+AsMHGwBfEEjt8pDMuj/HqksipMshALU4CtVQt2YCyVsePo1KNsJwEwOVHe4MKjJ+NmW5G3VzMQp0Y8HY="
+
+script:
+- pip install jinja2
+
+notifications:
+  email: false
