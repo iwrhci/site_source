@@ -67,11 +67,11 @@
                     <td style="text-align:center">
                         {% for s in val['status'] %}
                             {% if s == "mature" %}
-                                <span class="label label-success" style="font-size: tiny;" data-toggle="tooltip" data-placement="right" title="Mature project">M</span>
+                                <span class="label label-success" style="font-size: tiny; cursor:help;" data-toggle="tooltip" data-placement="right" title="Mature project">M</span>
                             {% elif s == "devel" %}
-                                <span class="label label-info" style="font-size: tiny;" data-toggle="tooltip" data-placement="right" title="Active development">D</span>
+                                <span class="label label-info" style="font-size: tiny; cursor:help;" data-toggle="tooltip" data-placement="right" title="Active development">D</span>
                             {% elif s == "research" %}
-                                <span class="label label-danger" style="font-size: tiny;" data-toggle="tooltip" data-placement="right" title="Research code">R</span>
+                                <span class="label label-danger" style="font-size: tiny; cursor:help;" data-toggle="tooltip" data-placement="right" title="Research code">R</span>
                             {% endif %}
                         {% endfor %}
                     </td>

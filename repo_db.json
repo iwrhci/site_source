@@ -2,37 +2,45 @@
     "cgp13": {
         "short_desc": "Cartesian Grid Partitioning.",
         "long_desc": "A C++ library for cartesian grid partitioning, with a matlab interface.",
-        "authors": ["Bjoern Andres", "Thorben Kroeger"]
+        "authors": ["Bjoern Andres", "Thorben Kroeger"],
+        "ext_link": "https://hciweb.iwr.uni-heidelberg.de/hci/softwares/cgp",
+        "status": ["mature"]
     },
     "vecvec": {
         "short_desc": "A serializable replacement for std::vector&lt;std::vector&lt;T&gt;&gt;.",
         "long_desc": "This is a dependency for <a href=\"http://hci-repo.iwr.uni-heidelberg.de/research_code/CGP\">CGP</a>. Use case: loading a fixed inverse relabeling (one to many and many to many relation) of millions of objects from disk.",
-        "authors": ["Thorben Kroeger"]
+        "authors": ["Thorben Kroeger"],
+        "status": ["mature"]
     },
     "visualizatino": {
         "short_desc": "2D and 3D visualisation of neurological datasets.",
         "long_desc": "2D and 3D visualisation of neurological datasets.",
-        "authors": ["Thorben Kroeger", "Niko Krasowski"]
+        "authors": ["Thorben Kroeger", "Niko Krasowski"],
+        "status": ["research"]
     },
     "chatty": {
         "short_desc": "A logger for both C++ and Python.",
         "long_desc": "This is a dependency for <a href=\"http://hci-repo.iwr.uni-heidelberg.de/research_code/CGP\">CGP</a>.",
-        "authors": ["Thorben Kroeger"]
+        "authors": ["Thorben Kroeger"],
+        "status": ["mature"]
     },
     "statistics-cgp": {
         "short_desc": "Statistics for <a href=\"http://hci-repo.iwr.uni-heidelberg.de/research_code/CGP\">CGP</a>.",
         "long_desc": "Evaluate average sizes of 1-sets, 2-sets, 3-sets as well as compression of topological grid blocks using the <a href=\"http://hci-repo.iwr.uni-heidelberg.de/research_code/CGP\">CGP</a> library. This library depends on <a href=\"http://hci-repo.iwr.uni-heidelberg.de/research_code/CGP\">CGP</a>.",
-        "authors": ["Thorben Kroeger"]
+        "authors": ["Thorben Kroeger"],
+        "status": ["mature"]
     },
     "ccc3d": {
         "short_desc": "A multicut solver based on <a href=\"http://hci-repo.iwr.uni-heidelberg.de/research_code/CGP\">CGP</a>.",
         "long_desc": "This library depends on <a href=\"http://hci-repo.iwr.uni-heidelberg.de/research_code/CGP\">CGP</a>.",
-        "authors": ["Thorben Kroeger", "Niko Krasowski"]
+        "authors": ["Thorben Kroeger", "Niko Krasowski"],
+        "status": ["mature"]
     },
     "CGP": {
         "short_desc": "Cartesian grid partitioning.",
         "long_desc": "This library depends on <a href=\"http://hci-repo.iwr.uni-heidelberg.de/research_code/vecvec\">vecvec</a> and <a href=\"http://hci-repo.iwr.uni-heidelberg.de/research_code/chatty\">chatty</a>.",
-        "authors": ["Thorben Kroeger", "Niko Krasowski"]
+        "authors": ["Thorben Kroeger", "Niko Krasowski"],
+        "status": ["mature"]
     },
     "libsvm_om": {
         "short_desc": "Octave/Matlab interface for libsvm.",
